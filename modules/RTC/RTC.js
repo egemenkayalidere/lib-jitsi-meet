@@ -427,6 +427,7 @@ export default class RTC extends Listenable {
      * @returns {void}
      */
     selectEndpoints(ids) {
+        console.log('ids', ids)
         this._selectedEndpoints = ids;
 
         if (this._channel && this._channel.isOpen()) {
